@@ -1,10 +1,10 @@
 import tcod
 from tcod.context import Context
 
-from engine import Engine
-from game_map import GameMap
-from input_handlers import EventDispatcher
-from entity import Entity
+from utils.engine import Engine
+from utils.game_map import GameMap
+from utils.input_handlers import EventDispatcher
+from utils.entity import Entity
 
 def main() -> None: 
     screen_width = 80
@@ -14,7 +14,7 @@ def main() -> None:
     map_height = 50
     
     tileset = tcod.tileset.load_tilesheet(
-        "./python_roguelike/2424_tileset.png", 16, 16, tcod.tileset.CHARMAP_CP437
+        "./python_roguelike/tileset/2424_tileset.png", 16, 16, tcod.tileset.CHARMAP_CP437
     )
     
     cp437_to_unicode = tcod.tileset.CHARMAP_CP437

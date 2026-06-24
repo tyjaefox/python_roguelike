@@ -1,6 +1,6 @@
 from typing import Optional
 import tcod.event
-from actions import Action, EscapeAction, MovementAction
+from utils.actions import Action, EscapeAction, MovementAction
 
 
 class EventDispatcher: 

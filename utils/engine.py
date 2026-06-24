@@ -3,10 +3,10 @@ from typing import Set, Iterable, Any
 from tcod.context import Context
 from tcod.console import Console
 
-from actions import EscapeAction, MovementAction
-from entity import Entity
-from game_map import GameMap
-from input_handlers import EventDispatcher
+from utils.actions import EscapeAction, MovementAction
+from utils.entity import Entity
+from utils.game_map import GameMap
+from utils.input_handlers import EventDispatcher
 
 
 
